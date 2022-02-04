@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+topic_baisics_p/CMakeFiles/sub_cpp_e.dir/rule:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 topic_baisics_p/CMakeFiles/sub_cpp_e.dir/rule
+.PHONY : topic_baisics_p/CMakeFiles/sub_cpp_e.dir/rule
+
+# Convenience name for target.
+sub_cpp_e: topic_baisics_p/CMakeFiles/sub_cpp_e.dir/rule
+
+.PHONY : sub_cpp_e
+
+# fast build rule for target.
+sub_cpp_e/fast:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build
+.PHONY : sub_cpp_e/fast
+
+# Convenience name for target.
 topic_baisics_p/CMakeFiles/pub_cpp_e.dir/rule:
 	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 topic_baisics_p/CMakeFiles/pub_cpp_e.dir/rule
 .PHONY : topic_baisics_p/CMakeFiles/pub_cpp_e.dir/rule
@@ -209,6 +224,33 @@ src/pub_cpp_f.cpp.s:
 	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f topic_baisics_p/CMakeFiles/pub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/pub_cpp_e.dir/src/pub_cpp_f.cpp.s
 .PHONY : src/pub_cpp_f.cpp.s
 
+src/sub_cpp_f.o: src/sub_cpp_f.cpp.o
+
+.PHONY : src/sub_cpp_f.o
+
+# target to build an object file
+src/sub_cpp_f.cpp.o:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/sub_cpp_e.dir/src/sub_cpp_f.cpp.o
+.PHONY : src/sub_cpp_f.cpp.o
+
+src/sub_cpp_f.i: src/sub_cpp_f.cpp.i
+
+.PHONY : src/sub_cpp_f.i
+
+# target to preprocess a source file
+src/sub_cpp_f.cpp.i:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/sub_cpp_e.dir/src/sub_cpp_f.cpp.i
+.PHONY : src/sub_cpp_f.cpp.i
+
+src/sub_cpp_f.s: src/sub_cpp_f.cpp.s
+
+.PHONY : src/sub_cpp_f.s
+
+# target to generate assembly for a file
+src/sub_cpp_f.cpp.s:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/sub_cpp_e.dir/src/sub_cpp_f.cpp.s
+.PHONY : src/sub_cpp_f.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -221,11 +263,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... sub_cpp_e"
 	@echo "... install/local"
 	@echo "... pub_cpp_e"
 	@echo "... src/pub_cpp_f.o"
 	@echo "... src/pub_cpp_f.i"
 	@echo "... src/pub_cpp_f.s"
+	@echo "... src/sub_cpp_f.o"
+	@echo "... src/sub_cpp_f.i"
+	@echo "... src/sub_cpp_f.s"
 .PHONY : help
 
 

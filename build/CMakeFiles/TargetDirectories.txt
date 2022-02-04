@@ -73,5 +73,6 @@
 /home/vienchau/Desktop/ros_ws/build/topic_baisics_p/CMakeFiles/rebuild_cache.dir
 /home/vienchau/Desktop/ros_ws/build/topic_baisics_p/CMakeFiles/edit_cache.dir
 /home/vienchau/Desktop/ros_ws/build/topic_baisics_p/CMakeFiles/test.dir
+/home/vienchau/Desktop/ros_ws/build/topic_baisics_p/CMakeFiles/sub_cpp_e.dir
 /home/vienchau/Desktop/ros_ws/build/topic_baisics_p/CMakeFiles/install/local.dir
 /home/vienchau/Desktop/ros_ws/build/topic_baisics_p/CMakeFiles/pub_cpp_e.dir

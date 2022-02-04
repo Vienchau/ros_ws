@@ -519,6 +519,19 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named sub_cpp_e
+
+# Build rule for target.
+sub_cpp_e: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sub_cpp_e
+.PHONY : sub_cpp_e
+
+# fast build rule for target.
+sub_cpp_e/fast:
+	$(MAKE) -f topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build
+.PHONY : sub_cpp_e/fast
+
+#=============================================================================
 # Target rules for targets named pub_cpp_e
 
 # Build rule for target.
@@ -571,6 +584,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... sub_cpp_e"
 	@echo "... pub_cpp_e"
 .PHONY : help
 

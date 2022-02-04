@@ -134,6 +134,8 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(pub_cpp_e src/pub_cpp_f.cpp)
+add_executable(sub_cpp_e src/sub_cpp_f.cpp)
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -147,6 +149,7 @@ add_executable(pub_cpp_e src/pub_cpp_f.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(pub_cpp_e ${catkin_LIBRARIES})
+target_link_libraries(sub_cpp_e ${catkin_LIBRARIES})
 
 #############
 ## Install ##
@@ -194,7 +197,7 @@ target_link_libraries(pub_cpp_e ${catkin_LIBRARIES})
 ## Testing ##
 #############
 
-## Add gtest based cpp test target and link libraries
+## gtest based cpp test target and link libraries
 # catkin_add_gtest(${PROJECT_NAME}-test test/test_topic_baisics_p.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
