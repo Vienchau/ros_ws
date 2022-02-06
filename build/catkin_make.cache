@@ -1,2 +1,2 @@
-my_first_p:node_basics_p:topic_baisics_p
+automate_turtlesim:my_first_p:node_basics_p:topic_baisics_p
 -DCATKIN_DEVEL_PREFIX=/home/vienchau/Desktop/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/vienchau/Desktop/ros_ws/install -G Unix Makefiles

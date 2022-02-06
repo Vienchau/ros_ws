@@ -57,6 +57,7 @@ all: gtest/all
 all: my_first_p/all
 all: node_basics_p/all
 all: topic_baisics_p/all
+all: automate_turtlesim/all
 
 .PHONY : all
 
@@ -65,6 +66,7 @@ preinstall: gtest/preinstall
 preinstall: my_first_p/preinstall
 preinstall: node_basics_p/preinstall
 preinstall: topic_baisics_p/preinstall
+preinstall: automate_turtlesim/preinstall
 
 .PHONY : preinstall
 
@@ -78,8 +80,42 @@ clean: gtest/clean
 clean: my_first_p/clean
 clean: node_basics_p/clean
 clean: topic_baisics_p/clean
+clean: automate_turtlesim/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory automate_turtlesim
+
+# Recursive "all" directory target.
+automate_turtlesim/all: automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/all
+
+.PHONY : automate_turtlesim/all
+
+# Recursive "preinstall" directory target.
+automate_turtlesim/preinstall:
+
+.PHONY : automate_turtlesim/preinstall
+
+# Recursive "clean" directory target.
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+automate_turtlesim/clean: automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
+
+.PHONY : automate_turtlesim/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -353,7 +389,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=5,6 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -380,7 +416,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=1,2 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=3,4 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -407,7 +443,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=9,10 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -434,7 +470,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=5,6 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=7,8 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -461,7 +497,7 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 my_first_p/CMakeFiles/hello_cpp_e.dir/all:
 	$(MAKE) -f my_first_p/CMakeFiles/hello_cpp_e.dir/build.make my_first_p/CMakeFiles/hello_cpp_e.dir/depend
 	$(MAKE) -f my_first_p/CMakeFiles/hello_cpp_e.dir/build.make my_first_p/CMakeFiles/hello_cpp_e.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=9,10 "Built target hello_cpp_e"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=11,12 "Built target hello_cpp_e"
 .PHONY : my_first_p/CMakeFiles/hello_cpp_e.dir/all
 
 # Build rule for subdir invocation for target.
@@ -515,7 +551,7 @@ my_first_p/CMakeFiles/_catkin_empty_exported_target.dir/clean:
 node_basics_p/CMakeFiles/hello_log_cpp_e.dir/all:
 	$(MAKE) -f node_basics_p/CMakeFiles/hello_log_cpp_e.dir/build.make node_basics_p/CMakeFiles/hello_log_cpp_e.dir/depend
 	$(MAKE) -f node_basics_p/CMakeFiles/hello_log_cpp_e.dir/build.make node_basics_p/CMakeFiles/hello_log_cpp_e.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=11,12 "Built target hello_log_cpp_e"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=13,14 "Built target hello_log_cpp_e"
 .PHONY : node_basics_p/CMakeFiles/hello_log_cpp_e.dir/all
 
 # Build rule for subdir invocation for target.
@@ -947,7 +983,7 @@ node_basics_p/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 topic_baisics_p/CMakeFiles/sub_cpp_e.dir/all:
 	$(MAKE) -f topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/sub_cpp_e.dir/depend
 	$(MAKE) -f topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=15,16 "Built target sub_cpp_e"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=17,18 "Built target sub_cpp_e"
 .PHONY : topic_baisics_p/CMakeFiles/sub_cpp_e.dir/all
 
 # Build rule for subdir invocation for target.
@@ -974,7 +1010,7 @@ topic_baisics_p/CMakeFiles/sub_cpp_e.dir/clean:
 topic_baisics_p/CMakeFiles/pub_cpp_e.dir/all:
 	$(MAKE) -f topic_baisics_p/CMakeFiles/pub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/pub_cpp_e.dir/depend
 	$(MAKE) -f topic_baisics_p/CMakeFiles/pub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/pub_cpp_e.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=13,14 "Built target pub_cpp_e"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=15,16 "Built target pub_cpp_e"
 .PHONY : topic_baisics_p/CMakeFiles/pub_cpp_e.dir/all
 
 # Build rule for subdir invocation for target.
@@ -993,6 +1029,438 @@ pub_cpp_e: topic_baisics_p/CMakeFiles/pub_cpp_e.dir/rule
 topic_baisics_p/CMakeFiles/pub_cpp_e.dir/clean:
 	$(MAKE) -f topic_baisics_p/CMakeFiles/pub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/pub_cpp_e.dir/clean
 .PHONY : topic_baisics_p/CMakeFiles/pub_cpp_e.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/build.make automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/build.make automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=1,2 "Built target circleturtle_cpp_e"
+.PHONY : automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/rule
+
+# Convenience name for target.
+circleturtle_cpp_e: automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/rule
+
+.PHONY : circleturtle_cpp_e
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/build.make automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/circleturtle_cpp_e.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_py"
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_py: automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+.PHONY : std_srvs_generate_messages_py
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target turtlesim_generate_messages_cpp"
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+turtlesim_generate_messages_cpp: automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/rule
+
+.PHONY : turtlesim_generate_messages_cpp
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_nodejs"
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_nodejs: automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_srvs_generate_messages_nodejs
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target turtlesim_generate_messages_py"
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/rule
+
+# Convenience name for target.
+turtlesim_generate_messages_py: automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/rule
+
+.PHONY : turtlesim_generate_messages_py
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target turtlesim_generate_messages_lisp"
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+turtlesim_generate_messages_lisp: automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule
+
+.PHONY : turtlesim_generate_messages_lisp
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target turtlesim_generate_messages_eus"
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+turtlesim_generate_messages_eus: automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/rule
+
+.PHONY : turtlesim_generate_messages_eus
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target turtlesim_generate_messages_nodejs"
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+turtlesim_generate_messages_nodejs: automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/rule
+
+.PHONY : turtlesim_generate_messages_nodejs
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/build.make automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/turtlesim_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_cpp"
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_cpp: automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+.PHONY : std_srvs_generate_messages_cpp
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_eus"
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_eus: automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+.PHONY : std_srvs_generate_messages_eus
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir
+
+# All Build rule for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/all:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/depend
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_lisp"
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_lisp: automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+.PHONY : std_srvs_generate_messages_lisp
+
+# clean rule for target.
+automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
+.PHONY : automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

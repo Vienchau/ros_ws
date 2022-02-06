@@ -1,0 +1,8 @@
+prefix=/home/vienchau/Desktop/ros_ws/devel
+
+Name: automate_turtlesim
+Description: Description of automate_turtlesim
+Version: 0.0.0
+Cflags: -I/home/vienchau/Desktop/ros_ws/src/automate_turtlesim/include
+Libs: -L${prefix}/lib -lautomate_turtlesim
+Requires: geometry_msgs roscpp rospy turtlesim
