@@ -99,3 +99,11 @@
 /home/vienchau/Desktop/ros_ws/build/automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir
 /home/vienchau/Desktop/ros_ws/build/automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir
 /home/vienchau/Desktop/ros_ws/build/automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir
+/home/vienchau/Desktop/ros_ws/build/service_basics_p/CMakeFiles/install/strip.dir
+/home/vienchau/Desktop/ros_ws/build/service_basics_p/CMakeFiles/install/local.dir
+/home/vienchau/Desktop/ros_ws/build/service_basics_p/CMakeFiles/install.dir
+/home/vienchau/Desktop/ros_ws/build/service_basics_p/CMakeFiles/list_install_components.dir
+/home/vienchau/Desktop/ros_ws/build/service_basics_p/CMakeFiles/rebuild_cache.dir
+/home/vienchau/Desktop/ros_ws/build/service_basics_p/CMakeFiles/edit_cache.dir
+/home/vienchau/Desktop/ros_ws/build/service_basics_p/CMakeFiles/test.dir
+/home/vienchau/Desktop/ros_ws/build/service_basics_p/CMakeFiles/clientchangepen_cpp_e.dir

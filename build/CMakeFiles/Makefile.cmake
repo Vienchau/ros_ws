@@ -18,6 +18,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "my_first_p/catkin_generated/package.cmake"
   "node_basics_p/catkin_generated/ordered_paths.cmake"
   "node_basics_p/catkin_generated/package.cmake"
+  "service_basics_p/catkin_generated/ordered_paths.cmake"
+  "service_basics_p/catkin_generated/package.cmake"
   "topic_baisics_p/catkin_generated/ordered_paths.cmake"
   "topic_baisics_p/catkin_generated/package.cmake"
   "/home/vienchau/Desktop/ros_ws/src/CMakeLists.txt"
@@ -27,6 +29,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/vienchau/Desktop/ros_ws/src/my_first_p/package.xml"
   "/home/vienchau/Desktop/ros_ws/src/node_basics_p/CMakeLists.txt"
   "/home/vienchau/Desktop/ros_ws/src/node_basics_p/package.xml"
+  "/home/vienchau/Desktop/ros_ws/src/service_basics_p/CMakeLists.txt"
+  "/home/vienchau/Desktop/ros_ws/src/service_basics_p/package.xml"
   "/home/vienchau/Desktop/ros_ws/src/topic_baisics_p/CMakeLists.txt"
   "/home/vienchau/Desktop/ros_ws/src/topic_baisics_p/package.xml"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
@@ -203,6 +207,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "node_basics_p/CMakeFiles/CMakeDirectoryInformation.cmake"
   "topic_baisics_p/CMakeFiles/CMakeDirectoryInformation.cmake"
   "automate_turtlesim/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "service_basics_p/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -252,4 +257,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "automate_turtlesim/CMakeFiles/std_srvs_generate_messages_cpp.dir/DependInfo.cmake"
   "automate_turtlesim/CMakeFiles/std_srvs_generate_messages_eus.dir/DependInfo.cmake"
   "automate_turtlesim/CMakeFiles/std_srvs_generate_messages_lisp.dir/DependInfo.cmake"
+  "service_basics_p/CMakeFiles/clientchangepen_cpp_e.dir/DependInfo.cmake"
   )
