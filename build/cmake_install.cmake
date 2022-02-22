@@ -132,6 +132,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/vienchau/Desktop/ros_ws/build/gtest/cmake_install.cmake")
   include("/home/vienchau/Desktop/ros_ws/build/my_first_p/cmake_install.cmake")
+  include("/home/vienchau/Desktop/ros_ws/build/msgsrv_basics_p/cmake_install.cmake")
+  include("/home/vienchau/Desktop/ros_ws/build/my_robot_p/cmake_install.cmake")
   include("/home/vienchau/Desktop/ros_ws/build/node_basics_p/cmake_install.cmake")
   include("/home/vienchau/Desktop/ros_ws/build/topic_baisics_p/cmake_install.cmake")
   include("/home/vienchau/Desktop/ros_ws/build/automate_turtlesim/cmake_install.cmake")

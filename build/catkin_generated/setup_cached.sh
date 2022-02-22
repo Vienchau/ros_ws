@@ -12,5 +12,6 @@ export LD_LIBRARY_PATH="/home/vienchau/Desktop/ros_ws/devel/lib:$LD_LIBRARY_PATH
 export PATH='/opt/ros/noetic/bin:/home/vienchau/anaconda3/bin:/home/vienchau/anaconda3/condabin:/home/vienchau/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
 export PKG_CONFIG_PATH="/home/vienchau/Desktop/ros_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/vienchau/Desktop/ros_ws/build'
+export PYTHONPATH="/home/vienchau/Desktop/ros_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES='/home/vienchau/Desktop/ros_ws/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/vienchau/Desktop/ros_ws/src:$ROS_PACKAGE_PATH"

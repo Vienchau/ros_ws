@@ -1,2 +1,22 @@
 # Hashes of file build rules.
+c78cbe0a55b951e6175bcc0cff4f4e24 /home/vienchau/Desktop/ros_ws/devel/include/msgsrv_basics_p/RobotStatus.h
+060fd645241de6b46c0d171ce493042c /home/vienchau/Desktop/ros_ws/devel/include/msgsrv_basics_p/WarningSwitch.h
+9008eedc763a718779c76872a7c14931 /home/vienchau/Desktop/ros_ws/devel/lib/python3/dist-packages/msgsrv_basics_p/msg/_RobotStatus.py
+cb45b8e16eec8951c09e3364f8d2a4a6 /home/vienchau/Desktop/ros_ws/devel/lib/python3/dist-packages/msgsrv_basics_p/msg/__init__.py
+419a7f7670effada969e359ac7038bad /home/vienchau/Desktop/ros_ws/devel/lib/python3/dist-packages/msgsrv_basics_p/srv/_WarningSwitch.py
+872c91304929f75c6c47247c489d9f7b /home/vienchau/Desktop/ros_ws/devel/lib/python3/dist-packages/msgsrv_basics_p/srv/__init__.py
+17b9bd28dd47d01726c96ff635000aa9 /home/vienchau/Desktop/ros_ws/devel/share/common-lisp/ros/msgsrv_basics_p/msg/RobotStatus.lisp
+11633fe79a26257bb4b82a04d4c1d881 /home/vienchau/Desktop/ros_ws/devel/share/common-lisp/ros/msgsrv_basics_p/srv/WarningSwitch.lisp
+cc5bcfcf2d239e83d949a43880511f1b /home/vienchau/Desktop/ros_ws/devel/share/gennodejs/ros/msgsrv_basics_p/msg/RobotStatus.js
+45cfae2c50925ca6d9e7e1631b55aef0 /home/vienchau/Desktop/ros_ws/devel/share/gennodejs/ros/msgsrv_basics_p/srv/WarningSwitch.js
+b375d9f53c607730df8bb22566f3364d /home/vienchau/Desktop/ros_ws/devel/share/roseus/ros/msgsrv_basics_p/manifest.l
+36c74f1b234f9289f0aed2527300cd8e /home/vienchau/Desktop/ros_ws/devel/share/roseus/ros/msgsrv_basics_p/msg/RobotStatus.l
+b7fd2b679614310d35ea70d9768dd73f /home/vienchau/Desktop/ros_ws/devel/share/roseus/ros/msgsrv_basics_p/srv/WarningSwitch.l
 89f993f65871a76aeeb6d603f5e1f9bc CMakeFiles/clean_test_results
+483a122be9e292a977aee310bf2782c1 msgsrv_basics_p/CMakeFiles/_msgsrv_basics_p_generate_messages_check_deps_RobotStatus
+a51919e89dcc938e1fa6e436b5fd36ed msgsrv_basics_p/CMakeFiles/_msgsrv_basics_p_generate_messages_check_deps_WarningSwitch
+35659bf5a43c5a2fdb88695e1e743e84 msgsrv_basics_p/CMakeFiles/msgsrv_basics_p_generate_messages_cpp
+35659bf5a43c5a2fdb88695e1e743e84 msgsrv_basics_p/CMakeFiles/msgsrv_basics_p_generate_messages_eus
+35659bf5a43c5a2fdb88695e1e743e84 msgsrv_basics_p/CMakeFiles/msgsrv_basics_p_generate_messages_lisp
+35659bf5a43c5a2fdb88695e1e743e84 msgsrv_basics_p/CMakeFiles/msgsrv_basics_p_generate_messages_nodejs
+35659bf5a43c5a2fdb88695e1e743e84 msgsrv_basics_p/CMakeFiles/msgsrv_basics_p_generate_messages_py
