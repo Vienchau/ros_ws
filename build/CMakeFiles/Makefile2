@@ -241,7 +241,9 @@ my_first_p/clean: my_first_p/CMakeFiles/_catkin_empty_exported_target.dir/clean
 # Directory level rules for directory my_robot_p
 
 # Recursive "all" directory target.
-my_robot_p/all:
+my_robot_p/all: my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/all
+my_robot_p/all: my_robot_p/CMakeFiles/pub_status_cpp_e.dir/all
+my_robot_p/all: my_robot_p/CMakeFiles/sub_client_cpp_e.dir/all
 
 .PHONY : my_robot_p/all
 
@@ -254,13 +256,16 @@ my_robot_p/preinstall:
 my_robot_p/clean: my_robot_p/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 my_robot_p/clean: my_robot_p/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 my_robot_p/clean: my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-my_robot_p/clean: my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/clean
+my_robot_p/clean: my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/clean
 my_robot_p/clean: my_robot_p/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 my_robot_p/clean: my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 my_robot_p/clean: my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 my_robot_p/clean: my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 my_robot_p/clean: my_robot_p/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 my_robot_p/clean: my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+my_robot_p/clean: my_robot_p/CMakeFiles/pub_status_cpp_e.dir/clean
+my_robot_p/clean: my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/clean
+my_robot_p/clean: my_robot_p/CMakeFiles/sub_client_cpp_e.dir/clean
 
 .PHONY : my_robot_p/clean
 
@@ -1340,31 +1345,31 @@ my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
 .PHONY : my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target my_robot_p/CMakeFiles/serv_warning_cpp_e.dir
 
 # All Build rule for target.
-my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
-.PHONY : my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/all
+my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/all:
+	$(MAKE) -f my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/build.make my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/depend
+	$(MAKE) -f my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/build.make my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=34,35 "Built target serv_warning_cpp_e"
+.PHONY : my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/all
 
 # Build rule for subdir invocation for target.
-my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
-.PHONY : my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule
+serv_warning_cpp_e: my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/rule
 
-.PHONY : roscpp_generate_messages_py
+.PHONY : serv_warning_cpp_e
 
 # clean rule for target.
-my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/clean
+my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/clean:
+	$(MAKE) -f my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/build.make my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/clean
+.PHONY : my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/clean
 
 #=============================================================================
 # Target rules for target my_robot_p/CMakeFiles/roscpp_generate_messages_nodejs.dir
@@ -1529,6 +1534,87 @@ my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 .PHONY : my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
+# Target rules for target my_robot_p/CMakeFiles/pub_status_cpp_e.dir
+
+# All Build rule for target.
+my_robot_p/CMakeFiles/pub_status_cpp_e.dir/all:
+	$(MAKE) -f my_robot_p/CMakeFiles/pub_status_cpp_e.dir/build.make my_robot_p/CMakeFiles/pub_status_cpp_e.dir/depend
+	$(MAKE) -f my_robot_p/CMakeFiles/pub_status_cpp_e.dir/build.make my_robot_p/CMakeFiles/pub_status_cpp_e.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=32,33 "Built target pub_status_cpp_e"
+.PHONY : my_robot_p/CMakeFiles/pub_status_cpp_e.dir/all
+
+# Build rule for subdir invocation for target.
+my_robot_p/CMakeFiles/pub_status_cpp_e.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_p/CMakeFiles/pub_status_cpp_e.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : my_robot_p/CMakeFiles/pub_status_cpp_e.dir/rule
+
+# Convenience name for target.
+pub_status_cpp_e: my_robot_p/CMakeFiles/pub_status_cpp_e.dir/rule
+
+.PHONY : pub_status_cpp_e
+
+# clean rule for target.
+my_robot_p/CMakeFiles/pub_status_cpp_e.dir/clean:
+	$(MAKE) -f my_robot_p/CMakeFiles/pub_status_cpp_e.dir/build.make my_robot_p/CMakeFiles/pub_status_cpp_e.dir/clean
+.PHONY : my_robot_p/CMakeFiles/pub_status_cpp_e.dir/clean
+
+#=============================================================================
+# Target rules for target my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir
+
+# All Build rule for target.
+my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
+.PHONY : my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# clean rule for target.
+my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target my_robot_p/CMakeFiles/sub_client_cpp_e.dir
+
+# All Build rule for target.
+my_robot_p/CMakeFiles/sub_client_cpp_e.dir/all:
+	$(MAKE) -f my_robot_p/CMakeFiles/sub_client_cpp_e.dir/build.make my_robot_p/CMakeFiles/sub_client_cpp_e.dir/depend
+	$(MAKE) -f my_robot_p/CMakeFiles/sub_client_cpp_e.dir/build.make my_robot_p/CMakeFiles/sub_client_cpp_e.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=36,37 "Built target sub_client_cpp_e"
+.PHONY : my_robot_p/CMakeFiles/sub_client_cpp_e.dir/all
+
+# Build rule for subdir invocation for target.
+my_robot_p/CMakeFiles/sub_client_cpp_e.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_p/CMakeFiles/sub_client_cpp_e.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vienchau/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : my_robot_p/CMakeFiles/sub_client_cpp_e.dir/rule
+
+# Convenience name for target.
+sub_client_cpp_e: my_robot_p/CMakeFiles/sub_client_cpp_e.dir/rule
+
+.PHONY : sub_client_cpp_e
+
+# clean rule for target.
+my_robot_p/CMakeFiles/sub_client_cpp_e.dir/clean:
+	$(MAKE) -f my_robot_p/CMakeFiles/sub_client_cpp_e.dir/build.make my_robot_p/CMakeFiles/sub_client_cpp_e.dir/clean
+.PHONY : my_robot_p/CMakeFiles/sub_client_cpp_e.dir/clean
+
+#=============================================================================
 # Target rules for target node_basics_p/CMakeFiles/hello_log_cpp_e.dir
 
 # All Build rule for target.
@@ -1562,7 +1648,7 @@ node_basics_p/CMakeFiles/hello_log_cpp_e.dir/clean:
 topic_baisics_p/CMakeFiles/sub_cpp_e.dir/all:
 	$(MAKE) -f topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/sub_cpp_e.dir/depend
 	$(MAKE) -f topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build.make topic_baisics_p/CMakeFiles/sub_cpp_e.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=32,33 "Built target sub_cpp_e"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vienchau/Desktop/ros_ws/build/CMakeFiles --progress-num=38,39 "Built target sub_cpp_e"
 .PHONY : topic_baisics_p/CMakeFiles/sub_cpp_e.dir/all
 
 # Build rule for subdir invocation for target.

@@ -90,6 +90,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -101,17 +112,6 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -213,19 +213,19 @@ rosgraph_msgs_generate_messages_nodejs/fast:
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule
+my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/rule:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/rule
+.PHONY : my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule
+serv_warning_cpp_e: my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/rule
 
-.PHONY : roscpp_generate_messages_py
+.PHONY : serv_warning_cpp_e
 
 # fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
+serv_warning_cpp_e/fast:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/build.make my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/build
+.PHONY : serv_warning_cpp_e/fast
 
 # Convenience name for target.
 my_robot_p/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
@@ -317,6 +317,132 @@ rosgraph_msgs_generate_messages_py/fast:
 	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
+# Convenience name for target.
+my_robot_p/CMakeFiles/pub_status_cpp_e.dir/rule:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_p/CMakeFiles/pub_status_cpp_e.dir/rule
+.PHONY : my_robot_p/CMakeFiles/pub_status_cpp_e.dir/rule
+
+# Convenience name for target.
+pub_status_cpp_e: my_robot_p/CMakeFiles/pub_status_cpp_e.dir/rule
+
+.PHONY : pub_status_cpp_e
+
+# fast build rule for target.
+pub_status_cpp_e/fast:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/pub_status_cpp_e.dir/build.make my_robot_p/CMakeFiles/pub_status_cpp_e.dir/build
+.PHONY : pub_status_cpp_e/fast
+
+# Convenience name for target.
+my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+my_robot_p/CMakeFiles/sub_client_cpp_e.dir/rule:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_p/CMakeFiles/sub_client_cpp_e.dir/rule
+.PHONY : my_robot_p/CMakeFiles/sub_client_cpp_e.dir/rule
+
+# Convenience name for target.
+sub_client_cpp_e: my_robot_p/CMakeFiles/sub_client_cpp_e.dir/rule
+
+.PHONY : sub_client_cpp_e
+
+# fast build rule for target.
+sub_client_cpp_e/fast:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/sub_client_cpp_e.dir/build.make my_robot_p/CMakeFiles/sub_client_cpp_e.dir/build
+.PHONY : sub_client_cpp_e/fast
+
+src/pub_status_cpp_f.o: src/pub_status_cpp_f.cpp.o
+
+.PHONY : src/pub_status_cpp_f.o
+
+# target to build an object file
+src/pub_status_cpp_f.cpp.o:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/pub_status_cpp_e.dir/build.make my_robot_p/CMakeFiles/pub_status_cpp_e.dir/src/pub_status_cpp_f.cpp.o
+.PHONY : src/pub_status_cpp_f.cpp.o
+
+src/pub_status_cpp_f.i: src/pub_status_cpp_f.cpp.i
+
+.PHONY : src/pub_status_cpp_f.i
+
+# target to preprocess a source file
+src/pub_status_cpp_f.cpp.i:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/pub_status_cpp_e.dir/build.make my_robot_p/CMakeFiles/pub_status_cpp_e.dir/src/pub_status_cpp_f.cpp.i
+.PHONY : src/pub_status_cpp_f.cpp.i
+
+src/pub_status_cpp_f.s: src/pub_status_cpp_f.cpp.s
+
+.PHONY : src/pub_status_cpp_f.s
+
+# target to generate assembly for a file
+src/pub_status_cpp_f.cpp.s:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/pub_status_cpp_e.dir/build.make my_robot_p/CMakeFiles/pub_status_cpp_e.dir/src/pub_status_cpp_f.cpp.s
+.PHONY : src/pub_status_cpp_f.cpp.s
+
+src/serv_warning_cpp_f.o: src/serv_warning_cpp_f.cpp.o
+
+.PHONY : src/serv_warning_cpp_f.o
+
+# target to build an object file
+src/serv_warning_cpp_f.cpp.o:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/build.make my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/src/serv_warning_cpp_f.cpp.o
+.PHONY : src/serv_warning_cpp_f.cpp.o
+
+src/serv_warning_cpp_f.i: src/serv_warning_cpp_f.cpp.i
+
+.PHONY : src/serv_warning_cpp_f.i
+
+# target to preprocess a source file
+src/serv_warning_cpp_f.cpp.i:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/build.make my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/src/serv_warning_cpp_f.cpp.i
+.PHONY : src/serv_warning_cpp_f.cpp.i
+
+src/serv_warning_cpp_f.s: src/serv_warning_cpp_f.cpp.s
+
+.PHONY : src/serv_warning_cpp_f.s
+
+# target to generate assembly for a file
+src/serv_warning_cpp_f.cpp.s:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/build.make my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/src/serv_warning_cpp_f.cpp.s
+.PHONY : src/serv_warning_cpp_f.cpp.s
+
+src/sub_client_cpp_f.o: src/sub_client_cpp_f.cpp.o
+
+.PHONY : src/sub_client_cpp_f.o
+
+# target to build an object file
+src/sub_client_cpp_f.cpp.o:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/sub_client_cpp_e.dir/build.make my_robot_p/CMakeFiles/sub_client_cpp_e.dir/src/sub_client_cpp_f.cpp.o
+.PHONY : src/sub_client_cpp_f.cpp.o
+
+src/sub_client_cpp_f.i: src/sub_client_cpp_f.cpp.i
+
+.PHONY : src/sub_client_cpp_f.i
+
+# target to preprocess a source file
+src/sub_client_cpp_f.cpp.i:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/sub_client_cpp_e.dir/build.make my_robot_p/CMakeFiles/sub_client_cpp_e.dir/src/sub_client_cpp_f.cpp.i
+.PHONY : src/sub_client_cpp_f.cpp.i
+
+src/sub_client_cpp_f.s: src/sub_client_cpp_f.cpp.s
+
+.PHONY : src/sub_client_cpp_f.s
+
+# target to generate assembly for a file
+src/sub_client_cpp_f.cpp.s:
+	cd /home/vienchau/Desktop/ros_ws/build && $(MAKE) -f my_robot_p/CMakeFiles/sub_client_cpp_e.dir/build.make my_robot_p/CMakeFiles/sub_client_cpp_e.dir/src/sub_client_cpp_f.cpp.s
+.PHONY : src/sub_client_cpp_f.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -326,20 +452,32 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... list_install_components"
+	@echo "... test"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_py"
+	@echo "... serv_warning_cpp_e"
 	@echo "... install"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... test"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... pub_status_cpp_e"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... sub_client_cpp_e"
+	@echo "... src/pub_status_cpp_f.o"
+	@echo "... src/pub_status_cpp_f.i"
+	@echo "... src/pub_status_cpp_f.s"
+	@echo "... src/serv_warning_cpp_f.o"
+	@echo "... src/serv_warning_cpp_f.i"
+	@echo "... src/serv_warning_cpp_f.s"
+	@echo "... src/sub_client_cpp_f.o"
+	@echo "... src/sub_client_cpp_f.i"
+	@echo "... src/sub_client_cpp_f.s"
 .PHONY : help
 
 

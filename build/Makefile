@@ -649,17 +649,17 @@ rosgraph_msgs_generate_messages_nodejs/fast:
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
+# Target rules for targets named serv_warning_cpp_e
 
 # Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
+serv_warning_cpp_e: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 serv_warning_cpp_e
+.PHONY : serv_warning_cpp_e
 
 # fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) -f my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
+serv_warning_cpp_e/fast:
+	$(MAKE) -f my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/build.make my_robot_p/CMakeFiles/serv_warning_cpp_e.dir/build
+.PHONY : serv_warning_cpp_e/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
@@ -738,6 +738,45 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 rosgraph_msgs_generate_messages_py/fast:
 	$(MAKE) -f my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named pub_status_cpp_e
+
+# Build rule for target.
+pub_status_cpp_e: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pub_status_cpp_e
+.PHONY : pub_status_cpp_e
+
+# fast build rule for target.
+pub_status_cpp_e/fast:
+	$(MAKE) -f my_robot_p/CMakeFiles/pub_status_cpp_e.dir/build.make my_robot_p/CMakeFiles/pub_status_cpp_e.dir/build
+.PHONY : pub_status_cpp_e/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_robot_p/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sub_client_cpp_e
+
+# Build rule for target.
+sub_client_cpp_e: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sub_client_cpp_e
+.PHONY : sub_client_cpp_e
+
+# fast build rule for target.
+sub_client_cpp_e/fast:
+	$(MAKE) -f my_robot_p/CMakeFiles/sub_client_cpp_e.dir/build.make my_robot_p/CMakeFiles/sub_client_cpp_e.dir/build
+.PHONY : sub_client_cpp_e/fast
 
 #=============================================================================
 # Target rules for targets named hello_log_cpp_e
@@ -984,13 +1023,16 @@ help:
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_py"
+	@echo "... serv_warning_cpp_e"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... pub_status_cpp_e"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... sub_client_cpp_e"
 	@echo "... hello_log_cpp_e"
 	@echo "... sub_cpp_e"
 	@echo "... pub_cpp_e"
